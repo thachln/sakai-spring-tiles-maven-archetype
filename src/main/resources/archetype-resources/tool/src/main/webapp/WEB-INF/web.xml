@@ -15,7 +15,7 @@
 	    <servlet-class>uk.ac.cam.caret.sakai.WebappToolServlet</servlet-class>
 	    <init-param>
 	      	<param-name>main-page</param-name>
-	      	<param-value>/index.htm</param-value>
+	      	<param-value>/home</param-value>
 	    </init-param>
 		<load-on-startup>0</load-on-startup>
   	</servlet>
@@ -46,7 +46,7 @@
 	
 	<!-- Sakai Spring Listener -->
 	<listener>
-		<listener-class>org.sakaiproject.util.ContextLoaderListener</listener-class>
+		<listener-class>org.sakaiproject.util.SakaiContextLoaderListener</listener-class>
 	</listener>
 	
 	  <servlet>
@@ -56,7 +56,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>springapp</servlet-name>
-    <url-pattern>*.htm</url-pattern>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
 	
 

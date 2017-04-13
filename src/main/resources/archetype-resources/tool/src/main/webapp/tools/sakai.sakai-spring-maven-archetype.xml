@@ -4,7 +4,7 @@
 <?xml version="1.0"?>
 <registration>
 	<tool id="sakai.${parentArtifactId}" 
-		title="My Sakai App ${artifactId}" 
+		title="${artifactId}" 
 		description="This description is set in the ${artifactId} registration file, found in the webapp/tools directory">
 
 		<category name="course" />
