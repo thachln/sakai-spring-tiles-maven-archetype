@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -20,6 +21,7 @@ import ${package}.logic.SakaiProxy;
  * Handles requests for the application home page.
  */
 @Controller
+@EnableWebMvc
 public class HomeController {
     final static protected Log LOG = LogFactory.getLog(HomeController.class);
 
@@ -57,8 +59,8 @@ public class HomeController {
 		ModelAndView mav = new ModelAndView("home");
 
 		
-//		mav.addObject("currentSiteId", sakaiProxy.getCurrentSiteId());
-//		mav.addObject("userDisplayName", sakaiProxy.getCurrentUserDisplayName());
+		mav.addObject("currentSiteId", sakaiProxy.getCurrentSiteId());
+		mav.addObject("userDisplayName", sakaiProxy.getCurrentUserDisplayName());
 
 		return mav;
 	}
