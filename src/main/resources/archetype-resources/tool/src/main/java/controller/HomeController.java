@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import lombok.Getter;
 import lombok.Setter;
-import m.k.s.sakaiapp.filem.logic.SakaiProxy;
+import ${package}.logic.SakaiProxy;
 
 /**
  * Handles requests for the application home page.
