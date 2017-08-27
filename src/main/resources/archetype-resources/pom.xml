@@ -50,6 +50,8 @@
 	<properties>
 	    <sakai.kernel.version>11.3</sakai.kernel.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-security-version>4.2.3.RELEASE</spring-security-version>
+        <module.version>${version}</module.version>
 	</properties>
 
 	<repositories>
@@ -81,9 +83,12 @@
 
   <modules>
     <module>api</module>
+	<module>common</module>
     <module>impl</module>
-    <module>tool</module>
     <module>pack</module>
+	<module>controller</module>
+	<module>tool</module>
+	<module>web</module>
   </modules>
   
 </project>

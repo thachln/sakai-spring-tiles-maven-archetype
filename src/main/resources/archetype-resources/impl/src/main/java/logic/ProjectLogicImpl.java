@@ -28,8 +28,8 @@ public class ProjectLogicImpl implements ProjectLogic {
 		
 		List<Item> items = new ArrayList<Item>();
 		
-		items.add(new Item(1,"hello"));
-		items.add(new Item(2,"world"));
+//		items.add(new Item(1,"hello"));
+//		items.add(new Item(2,"world"));
 		
 		return items;
 		

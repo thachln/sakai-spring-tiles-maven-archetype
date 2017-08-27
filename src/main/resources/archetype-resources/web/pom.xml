@@ -50,6 +50,60 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
+        <!-- Spring Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring-security-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring-security-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring-security-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>${spring-security-version}</version>
+        </dependency>
+    
+        <!-- For LDAP and CAS Authentication -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-ldap</artifactId>
+            <version>${spring-security-version}</version>
+        </dependency>
+    
+        <!-- CAS Authentication -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-cas-client</artifactId>
+            <version>3.0.8.RELEASE</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.jasig.cas</groupId>
+                    <artifactId>cas-client-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    
+        <dependency>
+            <groupId>org.jasig.cas.client</groupId>
+            <artifactId>cas-client-core</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>org.apache.directory.server</groupId>
+            <artifactId>apacheds-server-jndi</artifactId>
+            <version>1.5.5</version>
+        </dependency>
+
           <!-- Use Tiles to apply GUI layout -->
         <dependency>
           <groupId>org.apache.tiles</groupId>
@@ -100,13 +154,6 @@
 			<scope>compile</scope>
 		</dependency>
 
-
-		<!-- project dependencies -->
-		<dependency>
-			<groupId>${groupId}</groupId>
-			<artifactId>${rootArtifactId}-api</artifactId>
-		</dependency>
-		
         <!-- we are running a webapp in a servlet container so we need the servlet API -->
         <dependency>
             <groupId>javax.servlet</groupId>

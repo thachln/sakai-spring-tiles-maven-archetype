@@ -10,22 +10,15 @@
 	<groupId>${groupId}</groupId>
 	<artifactId>${artifactId}</artifactId>
 
-	<properties>
-		<deploy.target>lib</deploy.target>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-
-		<!-- Sakai dependencies -->
-		<dependency>
-			<groupId>org.sakaiproject.kernel</groupId>
-			<artifactId>sakai-kernel-api</artifactId>
-		</dependency>
-
-
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
 	</dependencies>
 	<build>
 		<!-- configure the build to use the standard maven structure -->
