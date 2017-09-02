@@ -3,8 +3,6 @@
 <%@ taglib prefix="r" uri="http://www.springframework.org/tags"%>
 <br />
 <div>
-This is the Homepage.</br>
-Current Site ID : ${currentSiteId} </br>
-User Display Name : ${userDisplayName}
+This is the body part of the home screen.
 
 </div>

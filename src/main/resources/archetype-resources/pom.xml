@@ -52,6 +52,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-security-version>4.2.3.RELEASE</spring-security-version>
         <module.version>${version}</module.version>
+        <thymeleaf.version>3.0.7.RELEASE</thymeleaf.version>
 	</properties>
 
 	<repositories>
