@@ -16,17 +16,16 @@
 
 </head>
 <body>
-
+	<div>
+		<tiles:insertAttribute name="header" flush="true"></tiles:insertAttribute>
+	</div>
+	<div>
+		<tiles:insertAttribute name="body" flush="true"></tiles:insertAttribute>
+	</div>
+	<tiles:insertAttribute name="footer" flush="true"></tiles:insertAttribute>
+	<div></div>
+	<tiles:insertAttribute name="js" flush="true"></tiles:insertAttribute>
 </body>
-<div>
-	<tiles:insertAttribute name="header" flush="true"></tiles:insertAttribute>
-</div>
-<div>
-	<tiles:insertAttribute name="body" flush="true"></tiles:insertAttribute>
-</div>
-<tiles:insertAttribute name="footer" flush="true"></tiles:insertAttribute>
-<div></div>
-<tiles:insertAttribute name="js" flush="true"></tiles:insertAttribute>
 </html>
 
 
