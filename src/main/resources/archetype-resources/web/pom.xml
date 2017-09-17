@@ -156,11 +156,13 @@
             <groupId>org.apache.tiles</groupId>
             <artifactId>tiles-core</artifactId>
             <version>3.0.5</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tiles</groupId>
             <artifactId>tiles-jsp</artifactId>
             <version>3.0.5</version>
+            <scope>compile</scope>
         </dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring4 -->
@@ -200,13 +202,14 @@
             <artifactId>jstl</artifactId>
             <version>1.1.2</version>
             <type>jar</type>
-            
+            <scope>compile</scope>
         </dependency>
 
         <!-- we are running a webapp in a servlet container so we need the servlet API -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
         <!-- third party dependencies -->
