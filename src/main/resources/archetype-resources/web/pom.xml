@@ -193,14 +193,14 @@
             <artifactId>standard</artifactId>
             <version>1.1.2</version>
             <type>jar</type>
-            <scope>compile</scope>
+            
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.1.2</version>
             <type>jar</type>
-            <scope>compile</scope>
+            
         </dependency>
 
         <!-- we are running a webapp in a servlet container so we need the servlet API -->
@@ -226,10 +226,10 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>org.projectlombok</groupId> -->
+<!--             <artifactId>lombok</artifactId> -->
+<!--         </dependency> -->
         <!-- Sakai dependencies -->
         <!-- We need this special package to run the jsps in Sakai -->
 <!--         <dependency> -->
@@ -273,6 +273,15 @@
             </resource>
         </resources>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
             <!-- configure the war plugin to correctly use the standard maven structure -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
