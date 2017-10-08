@@ -50,7 +50,8 @@
 	<properties>
 	    <sakai.kernel.version>11.3</sakai.kernel.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring-security-version>4.2.3.RELEASE</spring-security-version>
+		<spring.version>4.2.7.RELEASE</spring.version>
+        <spring.security.version>4.2.3.RELEASE</spring.security.version>
         <module.version>${version}</module.version>
         <thymeleaf.version>3.0.7.RELEASE</thymeleaf.version>
 	</properties>
