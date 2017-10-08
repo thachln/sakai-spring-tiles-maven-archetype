@@ -28,16 +28,33 @@
 <!-- 	</bean> -->
 
   <!-- New bean added for using Spring tiles -->
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"/>
+<!--     <bean id="viewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"/> -->
 
-    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
-      <property name="definitions">
-        <list>
-          <value>/WEB-INF/views/layouts/layouts.xml</value>
-          <value>/WEB-INF/views/**/views.xml</value>
-        </list>
-      </property>
-    </bean>
+<!--     <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer"> -->
+<!--       <property name="definitions"> -->
+<!--         <list> -->
+<!--           <value>/WEB-INF/views/layouts/layouts.xml</value> -->
+<!--           <value>/WEB-INF/views/**/views.xml</value> -->
+<!--         </list> -->
+<!--       </property> -->
+<!--     </bean> -->
+
+<!-- Using Thymeleaf for layout. Refer: http://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html -->
+	<bean id="templateResolver" class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+	  <property name="prefix" value="/WEB-INF/templates/" />
+	  <property name="suffix" value=".html" />
+	  <property name="templateMode" value="HTML5" />
+	</bean>
+
+	<bean id="templateEngine" class="org.thymeleaf.spring4.SpringTemplateEngine">
+		<property name="templateResolver" ref="templateResolver" />
+		<property name="enableSpringELCompiler" value="true" />
+	</bean>
+
+	<bean class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+	  <property name="templateEngine" ref="templateEngine" />
+	  <property name="order" value="1" />
+	</bean>
 
     <!-- Load configuration file. -->
     <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">

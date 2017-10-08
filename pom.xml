@@ -4,7 +4,7 @@
 
   <groupId>org.sakaiproject.maven-archetype</groupId>
   <artifactId>sakai-spring-tiles-maven-archetype</artifactId>
-  <version>1.4</version>
+  <version>1.5</version>
   <packaging>maven-archetype</packaging>
 
   <name>sakai-spring-tiles-maven-archetype</name>

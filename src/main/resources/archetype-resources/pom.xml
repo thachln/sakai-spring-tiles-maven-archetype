@@ -53,7 +53,7 @@
 		<spring.version>4.2.7.RELEASE</spring.version>
         <spring.security.version>4.2.3.RELEASE</spring.security.version>
         <module.version>${version}</module.version>
-        <thymeleaf.version>3.0.7.RELEASE</thymeleaf.version>
+        <thymeleaf.version>3.0.8.RELEASE</thymeleaf.version>
 	</properties>
 
 	<repositories>
